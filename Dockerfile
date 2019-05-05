@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:stretch
 ENV TINI_VERSION=0.18.0
 COPY haproxy-run /etc/service/haproxy/run
 COPY rspamd-run /etc/service/rspamd/run
