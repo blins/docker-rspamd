@@ -1,2 +1,7 @@
 global:
-  project_name: vixns/rspamd
+  project_name: rspamd
+
+docker:
+  builds:
+  - registry: docker.vixns.net
+    updateLatest: true
