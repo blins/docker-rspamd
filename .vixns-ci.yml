@@ -1,3 +1,5 @@
+---
+version: 1
 global:
   project_name: rspamd
 
