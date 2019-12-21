@@ -11,7 +11,8 @@ RUN apt-get update \
     && echo "deb http://rspamd.com/apt-stable/ buster main" > /etc/apt/sources.list.d/rspamd.list \
     && echo "deb http://http.debian.net/debian buster-backports contrib non-free main" >> /etc/apt/sources.list \
     && apt-get update \
-    && apt-get install -y --no-install-recommends -t buster-backports rspamd haproxy runit procps \
+    && apt-get install -y --no-install-recommends -t buster-backports haproxy runit procps \
+    && apt-get install -y rspamd \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
 	&& chmod +x /etc/service/haproxy/run /etc/service/rspamd/run \
